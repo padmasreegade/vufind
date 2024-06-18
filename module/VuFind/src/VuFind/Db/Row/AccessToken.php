@@ -45,7 +45,7 @@ use VuFind\Db\Entity\UserEntityInterface;
 class AccessToken extends RowGateway implements AccessTokenEntityInterface
 {
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter Database adapter
      */

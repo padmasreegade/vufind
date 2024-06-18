@@ -78,9 +78,9 @@ class UserCard extends RowGateway implements DbServiceAwareInterface, UserCardEn
     }
 
     /**
-     * Card name setter
+     * Card name setter.
      *
-     * @param string $cardName User card name.
+     * @param string $cardName User card name
      *
      * @return UserCardEntityInterface
      */
@@ -101,7 +101,7 @@ class UserCard extends RowGateway implements DbServiceAwareInterface, UserCardEn
     }
 
     /**
-     * Catalog username setter
+     * Catalog username setter.
      *
      * @param string $catUsername Catalog username
      *
@@ -124,7 +124,7 @@ class UserCard extends RowGateway implements DbServiceAwareInterface, UserCardEn
     }
 
     /**
-     * Raw catalog password setter
+     * Raw catalog password setter.
      *
      * @param ?string $catPassword Cat password
      *
@@ -147,7 +147,7 @@ class UserCard extends RowGateway implements DbServiceAwareInterface, UserCardEn
     }
 
     /**
-     * Encrypted catalog password setter
+     * Encrypted catalog password setter.
      *
      * @param ?string $passEnc Encrypted password
      *
@@ -170,7 +170,7 @@ class UserCard extends RowGateway implements DbServiceAwareInterface, UserCardEn
     }
 
     /**
-     * Home library setter
+     * Home library setter.
      *
      * @param ?string $homeLibrary Home library
      *
@@ -252,7 +252,7 @@ class UserCard extends RowGateway implements DbServiceAwareInterface, UserCardEn
     }
 
     /**
-     * User getter
+     * User getter.
      *
      * @return UserEntityInterface
      */

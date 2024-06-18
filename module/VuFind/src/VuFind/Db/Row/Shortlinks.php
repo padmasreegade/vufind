@@ -49,7 +49,7 @@ use VuFind\Db\Entity\ShortlinksEntityInterface;
 class Shortlinks extends RowGateway implements \VuFind\Db\Entity\ShortlinksEntityInterface
 {
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter Database adapter
      */

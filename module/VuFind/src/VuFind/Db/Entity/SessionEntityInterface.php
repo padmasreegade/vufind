@@ -43,16 +43,16 @@ use DateTime;
 interface SessionEntityInterface extends EntityInterface
 {
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
     public function getId(): int;
 
     /**
-     * Session Id setter
+     * Session Id setter.
      *
-     * @param ?string $sid Session Id.
+     * @param ?string $sid Session Id
      *
      * @return SessionEntityInterface
      */
@@ -86,7 +86,7 @@ interface SessionEntityInterface extends EntityInterface
     /**
      * Session data setter.
      *
-     * @param ?string $data Session data.
+     * @param ?string $data Session data
      *
      * @return SessionEntityInterface
      */

@@ -51,7 +51,7 @@ use VuFind\Db\Entity\ChangeTrackerEntityInterface;
 class ChangeTracker extends RowGateway implements ChangeTrackerEntityInterface
 {
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter Database adapter
      */
@@ -109,7 +109,7 @@ class ChangeTracker extends RowGateway implements ChangeTrackerEntityInterface
     /**
      * FirstIndexed setter.
      *
-     * @param ?DateTime $dateTime Time first added to index.
+     * @param ?DateTime $dateTime Time first added to index
      *
      * @return ChangeTrackerEntityInterface
      */
@@ -132,7 +132,7 @@ class ChangeTracker extends RowGateway implements ChangeTrackerEntityInterface
     /**
      * LastIndexed setter.
      *
-     * @param ?DateTime $dateTime Last time changed in index.
+     * @param ?DateTime $dateTime Last time changed in index
      *
      * @return ChangeTrackerEntityInterface
      */

@@ -51,7 +51,7 @@ use VuFind\Db\Entity\RecordEntityInterface;
 class Record extends RowGateway implements RecordEntityInterface
 {
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter Database adapter
      */

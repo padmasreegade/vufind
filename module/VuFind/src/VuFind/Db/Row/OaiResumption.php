@@ -80,7 +80,7 @@ class OaiResumption extends RowGateway implements OaiResumptionEntityInterface
     /**
      * Encode an array of parameters into the object.
      *
-     * @param array $params Parameters to save.
+     * @param array $params Parameters to save
      *
      * @return void
      *
@@ -97,7 +97,7 @@ class OaiResumption extends RowGateway implements OaiResumptionEntityInterface
     }
 
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
@@ -107,9 +107,9 @@ class OaiResumption extends RowGateway implements OaiResumptionEntityInterface
     }
 
     /**
-     * Resumption parameters setter
+     * Resumption parameters setter.
      *
-     * @param ?string $params Resumption parameters.
+     * @param ?string $params Resumption parameters
      *
      * @return OaiResumptionEntityInterface
      */

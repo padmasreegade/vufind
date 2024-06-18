@@ -65,7 +65,7 @@ class UserResource extends RowGateway implements
     use DbServiceAwareTrait;
 
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter Database adapter
      */

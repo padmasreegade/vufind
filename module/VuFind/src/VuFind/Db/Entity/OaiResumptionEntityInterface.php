@@ -43,14 +43,14 @@ use DateTime;
 interface OaiResumptionEntityInterface extends EntityInterface
 {
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
     public function getId(): int;
 
     /**
-     * Resumption parameters setter
+     * Resumption parameters setter.
      *
      * @param ?string $params Resumption parameters.
      *

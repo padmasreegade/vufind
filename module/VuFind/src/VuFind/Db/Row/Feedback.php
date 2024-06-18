@@ -73,7 +73,7 @@ class Feedback extends RowGateway implements FeedbackEntityInterface, DbServiceA
     }
 
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
@@ -83,7 +83,7 @@ class Feedback extends RowGateway implements FeedbackEntityInterface, DbServiceA
     }
 
     /**
-     * Message setter
+     * Message setter.
      *
      * @param string $message Message
      *
@@ -96,7 +96,7 @@ class Feedback extends RowGateway implements FeedbackEntityInterface, DbServiceA
     }
 
     /**
-     * Message getter
+     * Message getter.
      *
      * @return string
      */
@@ -119,7 +119,7 @@ class Feedback extends RowGateway implements FeedbackEntityInterface, DbServiceA
     }
 
     /**
-     * Form data getter
+     * Form data getter.
      *
      * @return array
      */
@@ -142,7 +142,7 @@ class Feedback extends RowGateway implements FeedbackEntityInterface, DbServiceA
     }
 
     /**
-     * Form name getter
+     * Form name getter.
      *
      * @return string
      */
@@ -165,7 +165,7 @@ class Feedback extends RowGateway implements FeedbackEntityInterface, DbServiceA
     }
 
     /**
-     * Created getter
+     * Created getter.
      *
      * @return DateTime
      */
@@ -188,7 +188,7 @@ class Feedback extends RowGateway implements FeedbackEntityInterface, DbServiceA
     }
 
     /**
-     * Updated getter
+     * Updated getter.
      *
      * @return DateTime
      */
@@ -211,7 +211,7 @@ class Feedback extends RowGateway implements FeedbackEntityInterface, DbServiceA
     }
 
     /**
-     * Status getter
+     * Status getter.
      *
      * @return string
      */
@@ -234,7 +234,7 @@ class Feedback extends RowGateway implements FeedbackEntityInterface, DbServiceA
     }
 
     /**
-     * Site URL getter
+     * Site URL getter.
      *
      * @return string
      */
@@ -257,7 +257,7 @@ class Feedback extends RowGateway implements FeedbackEntityInterface, DbServiceA
     }
 
     /**
-     * User getter
+     * User getter.
      *
      * @return ?UserEntityInterface
      */
@@ -282,7 +282,7 @@ class Feedback extends RowGateway implements FeedbackEntityInterface, DbServiceA
     }
 
     /**
-     * Updatedby getter
+     * Updatedby getter.
      *
      * @return ?UserEntityInterface
      */

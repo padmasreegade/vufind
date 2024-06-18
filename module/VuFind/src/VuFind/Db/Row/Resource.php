@@ -280,7 +280,7 @@ class Resource extends RowGateway implements DbServiceAwareInterface, DbTableAwa
     }
 
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
@@ -290,7 +290,7 @@ class Resource extends RowGateway implements DbServiceAwareInterface, DbTableAwa
     }
 
     /**
-     * Record Id setter
+     * Record Id setter.
      *
      * @param string $recordId recordId
      *
@@ -303,7 +303,7 @@ class Resource extends RowGateway implements DbServiceAwareInterface, DbTableAwa
     }
 
     /**
-     * Record Id getter
+     * Record Id getter.
      *
      * @return string
      */
@@ -313,9 +313,9 @@ class Resource extends RowGateway implements DbServiceAwareInterface, DbTableAwa
     }
 
     /**
-     * Title setter
+     * Title setter.
      *
-     * @param string $title Title of the record.
+     * @param string $title Title of the record
      *
      * @return ResourceEntityInterface
      */
@@ -326,7 +326,7 @@ class Resource extends RowGateway implements DbServiceAwareInterface, DbTableAwa
     }
 
     /**
-     * Title getter
+     * Title getter.
      *
      * @return string
      */
@@ -336,9 +336,9 @@ class Resource extends RowGateway implements DbServiceAwareInterface, DbTableAwa
     }
 
     /**
-     * Author setter
+     * Author setter.
      *
-     * @param ?string $author Author of the title.
+     * @param ?string $author Author of the title
      *
      * @return ResourceEntityInterface
      */
@@ -349,9 +349,9 @@ class Resource extends RowGateway implements DbServiceAwareInterface, DbTableAwa
     }
 
     /**
-     * Year setter
+     * Year setter.
      *
-     * @param ?int $year Year title is published.
+     * @param ?int $year Year title is published
      *
      * @return ResourceEntityInterface
      */
@@ -362,9 +362,9 @@ class Resource extends RowGateway implements DbServiceAwareInterface, DbTableAwa
     }
 
     /**
-     * Source setter
+     * Source setter.
      *
-     * @param string $source Source (a search backend ID).
+     * @param string $source Source (a search backend ID)
      *
      * @return ResourceEntityInterface
      */
@@ -375,7 +375,7 @@ class Resource extends RowGateway implements DbServiceAwareInterface, DbTableAwa
     }
 
     /**
-     * Source getter
+     * Source getter.
      *
      * @return string
      */
@@ -385,9 +385,9 @@ class Resource extends RowGateway implements DbServiceAwareInterface, DbTableAwa
     }
 
     /**
-     * Extra Metadata setter
+     * Extra Metadata setter.
      *
-     * @param ?string $extraMetadata ExtraMetadata.
+     * @param ?string $extraMetadata ExtraMetadata
      *
      * @return ResourceEntityInterface
      */
@@ -398,7 +398,7 @@ class Resource extends RowGateway implements DbServiceAwareInterface, DbTableAwa
     }
 
     /**
-     * Extra Metadata getter
+     * Extra Metadata getter.
      *
      * @return ?string
      */

@@ -50,7 +50,7 @@ interface UserEntityInterface extends EntityInterface
     public function getId(): ?int;
 
     /**
-     * Username setter
+     * Username setter.
      *
      * @param string $username Username
      *
@@ -178,7 +178,7 @@ interface UserEntityInterface extends EntityInterface
     public function getCatId(): ?string;
 
     /**
-     * Catalog username setter
+     * Catalog username setter.
      *
      * @param ?string $catUsername Catalog username
      *
@@ -194,7 +194,7 @@ interface UserEntityInterface extends EntityInterface
     public function getCatUsername(): ?string;
 
     /**
-     * Home library setter
+     * Home library setter.
      *
      * @param ?string $homeLibrary Home library
      *
@@ -210,7 +210,7 @@ interface UserEntityInterface extends EntityInterface
     public function getHomeLibrary(): ?string;
 
     /**
-     * Raw catalog password setter
+     * Raw catalog password setter.
      *
      * @param ?string $catPassword Cat password
      *
@@ -226,7 +226,7 @@ interface UserEntityInterface extends EntityInterface
     public function getRawCatPassword(): ?string;
 
     /**
-     * Encrypted catalog password setter
+     * Encrypted catalog password setter.
      *
      * @param ?string $passEnc Encrypted password
      *
@@ -347,14 +347,14 @@ interface UserEntityInterface extends EntityInterface
     public function setLastLogin(DateTime $dateTime): UserEntityInterface;
 
     /**
-     * Last login getter
+     * Last login getter.
      *
      * @return DateTime
      */
     public function getLastLogin(): DateTime;
 
     /**
-     * Created setter
+     * Created setter.
      *
      * @param DateTime $dateTime Last login date
      *
@@ -363,7 +363,7 @@ interface UserEntityInterface extends EntityInterface
     public function setCreated(DateTime $dateTime): UserEntityInterface;
 
     /**
-     * Created getter
+     * Created getter.
      *
      * @return DateTime
      */

@@ -50,7 +50,7 @@ use VuFind\Db\Entity\SessionEntityInterface;
 class Session extends RowGateway implements SessionEntityInterface
 {
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter Database adapter
      */
@@ -60,7 +60,7 @@ class Session extends RowGateway implements SessionEntityInterface
     }
 
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
@@ -70,9 +70,9 @@ class Session extends RowGateway implements SessionEntityInterface
     }
 
     /**
-     * Session Id setter
+     * Session Id setter.
      *
-     * @param ?string $sid Session Id.
+     * @param ?string $sid Session Id
      *
      * @return SessionEntityInterface
      */
@@ -121,7 +121,7 @@ class Session extends RowGateway implements SessionEntityInterface
     /**
      * Session data setter.
      *
-     * @param ?string $data Session data.
+     * @param ?string $data Session data
      *
      * @return SessionEntityInterface
      */

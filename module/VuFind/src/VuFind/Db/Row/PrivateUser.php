@@ -45,7 +45,7 @@ use function array_key_exists;
 class PrivateUser extends User
 {
     /**
-     * __get
+     * __get.
      *
      * @param string $name Field to retrieve.
      *
@@ -58,7 +58,7 @@ class PrivateUser extends User
     }
 
     /**
-     * Save
+     * Save.
      *
      * @return int
      */
@@ -71,7 +71,7 @@ class PrivateUser extends User
     }
 
     /**
-     * Set session container
+     * Set session container.
      *
      * @param \Laminas\Session\Container $session Session container
      *

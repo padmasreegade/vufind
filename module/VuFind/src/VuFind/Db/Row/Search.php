@@ -69,7 +69,7 @@ class Search extends RowGateway implements
     use DbServiceAwareTrait;
 
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter Database adapter
      */
@@ -123,7 +123,7 @@ class Search extends RowGateway implements
     }
 
     /**
-     * Save
+     * Save.
      *
      * @return int
      */
@@ -138,7 +138,7 @@ class Search extends RowGateway implements
     /**
      * Set last executed time for scheduled alert.
      *
-     * @param string $time Time.
+     * @param string $time Time
      *
      * @return mixed
      *
@@ -153,7 +153,7 @@ class Search extends RowGateway implements
     /**
      * Set schedule for scheduled alert.
      *
-     * @param int    $schedule Schedule.
+     * @param int    $schedule Schedule
      * @param string $url      Site base URL
      *
      * @return mixed

@@ -96,7 +96,7 @@ class User extends RowGateway implements
     protected $config = null;
 
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter          Database adapter
      * @param ILSAuthenticator            $ilsAuthenticator ILS authenticator
@@ -113,7 +113,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Configuration setter
+     * Configuration setter.
      *
      * @param \Laminas\Config\Config $config VuFind configuration
      *
@@ -143,9 +143,9 @@ class User extends RowGateway implements
     /**
      * Save ILS ID.
      *
-     * @param string $catId Catalog ID to save.
+     * @param string $catId Catalog ID to save
      *
-     * @return mixed        The output of the save method.
+     * @return mixed        The output of the save method
      * @throws \VuFind\Exception\PasswordSecurity
      *
      * @deprecated Use UserEntityInterface::setCatId() and \VuFind\Db\Service\DbServiceInterface::persistEntity()
@@ -190,9 +190,9 @@ class User extends RowGateway implements
     /**
      * Save date/time when email address has been verified.
      *
-     * @param string $datetime optional date/time to save.
+     * @param string $datetime optional date/time to save
      *
-     * @return mixed           The output of the save method.
+     * @return mixed           The output of the save method
      *
      * @deprecated Use UserEntityInterface::setEmailVerified() and
      * \VuFind\Db\Service\DbServiceInterface::persistEntity()
@@ -239,7 +239,7 @@ class User extends RowGateway implements
      *
      * @param string $text    The text to be encrypted or decrypted
      * @param bool   $encrypt True if we wish to encrypt text, False if we wish to
-     * decrypt text.
+     * decrypt text
      *
      * @return string|bool    The encrypted/decrypted string
      * @throws \VuFind\Exception\PasswordSecurity
@@ -260,7 +260,7 @@ class User extends RowGateway implements
      * backward compatibility and indicates that system's default pick up location is
      * to be used
      *
-     * @return mixed               The output of the save method.
+     * @return mixed               The output of the save method
      *
      * @deprecated Use ILSAuthenticator::updateUserHomeLibrary()
      */
@@ -286,9 +286,9 @@ class User extends RowGateway implements
      * the returned list WILL NOT include tags attached to records that are not
      * saved in favorites lists.
      *
-     * @param string $resourceId Filter for tags tied to a specific resource (null for no filter).
-     * @param int    $listId     Filter for tags tied to a specific list (null for no filter).
-     * @param string $source     Filter for tags tied to a specific record source. (null for no filter).
+     * @param string $resourceId Filter for tags tied to a specific resource (null for no filter)
+     * @param int    $listId     Filter for tags tied to a specific list (null for no filter)
+     * @param string $source     Filter for tags tied to a specific record source (null for no filter)
      *
      * @return array
      *
@@ -318,11 +318,11 @@ class User extends RowGateway implements
      * array of tag objects.
      *
      * @param string $resourceId Filter for tags tied to a specific resource (null
-     * for no filter).
+     * for no filter)
      * @param int    $listId     Filter for tags tied to a specific list (null for no
-     * filter).
+     * filter)
      * @param string $source     Filter for tags tied to a specific record source
-     * (null for no filter).
+     * (null for no filter)
      *
      * @return string
      *
@@ -401,9 +401,9 @@ class User extends RowGateway implements
     /**
      * Get information saved in a user's favorites for a particular record.
      *
-     * @param string $resourceId ID of record being checked.
+     * @param string $resourceId ID of record being checked
      * @param int    $listId     Optional list ID (to limit results to a particular
-     * list).
+     * list)
      * @param string $source     Source of record to look up
      *
      * @return array
@@ -426,10 +426,10 @@ class User extends RowGateway implements
      * @param \VuFind\Db\Row\UserList $list            The list to store the resource
      * in.
      * @param array                   $tagArray        An array of tags to associate
-     * with the resource.
-     * @param string                  $notes           User notes about the resource.
+     * with the resource
+     * @param string                  $notes           User notes about the resource
      * @param bool                    $replaceExisting Whether to replace all
-     * existing tags (true) or append to the existing list (false).
+     * existing tags (true) or append to the existing list (false)
      *
      * @return void
      *
@@ -459,7 +459,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Given an array of item ids, remove them from all lists
+     * Given an array of item ids, remove them from all lists.
      *
      * @param array  $ids    IDs to remove from the list
      * @param string $source Type of resource identified by IDs
@@ -485,7 +485,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Whether library cards are enabled
+     * Whether library cards are enabled.
      *
      * @return bool
      *
@@ -514,7 +514,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Get library card data
+     * Get library card data.
      *
      * @param int $id Library card ID
      *
@@ -529,7 +529,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Delete library card
+     * Delete library card.
      *
      * @param int $id Library card ID
      *
@@ -544,7 +544,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Activate a library card for the given username
+     * Activate a library card for the given username.
      *
      * @param int $id Library card ID
      *
@@ -559,7 +559,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Save library card with the given information
+     * Save library card with the given information.
      *
      * @param int    $id       Card ID
      * @param string $cardName Card name
@@ -614,7 +614,7 @@ class User extends RowGateway implements
      * @param bool $removeComments Whether to remove user's comments
      * @param bool $removeRatings  Whether to remove user's ratings
      *
-     * @return int The number of rows deleted.
+     * @return int The number of rows deleted
      *
      * @deprecated Use \VuFind\Account\UserAccountService::purgeUserData()
      */
@@ -642,7 +642,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Update the verification hash for this user
+     * Update the verification hash for this user.
      *
      * @return bool save success
      *
@@ -658,14 +658,14 @@ class User extends RowGateway implements
     }
 
     /**
-     * Updated saved language
+     * Updated saved language.
      *
      * @param string $language New language
      *
      * @return void
      *
      * @deprecated Use \VuFind\Db\Entity\UserEntityInterface::setLastLanguage()
-     * and \VuFind\Db\Service\UserService::persistEntity() instead.
+     * and \VuFind\Db\Service\UserService::persistEntity() instead
      */
     public function updateLastLanguage($language)
     {
@@ -692,7 +692,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Get the list of roles of this identity
+     * Get the list of roles of this identity.
      *
      * @return string[]|\Rbac\Role\RoleInterface[]
      */
@@ -712,7 +712,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Username setter
+     * Username setter.
      *
      * @param string $username Username
      *
@@ -873,7 +873,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Catalog id setter
+     * Catalog id setter.
      *
      * @param ?string $catId Catalog id
      *
@@ -896,7 +896,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Catalog username setter
+     * Catalog username setter.
      *
      * @param ?string $catUsername Catalog username
      *
@@ -919,7 +919,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Home library setter
+     * Home library setter.
      *
      * @param ?string $homeLibrary Home library
      *
@@ -942,7 +942,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Raw catalog password setter
+     * Raw catalog password setter.
      *
      * @param ?string $catPassword Cat password
      *
@@ -965,7 +965,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Encrypted catalog password setter
+     * Encrypted catalog password setter.
      *
      * @param ?string $passEnc Encrypted password
      *
@@ -1139,7 +1139,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Last login getter
+     * Last login getter.
      *
      * @return DateTime
      */
@@ -1149,7 +1149,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Created setter
+     * Created setter.
      *
      * @param DateTime $dateTime Creation date
      *
@@ -1162,7 +1162,7 @@ class User extends RowGateway implements
     }
 
     /**
-     * Created getter
+     * Created getter.
      *
      * @return DateTime
      */

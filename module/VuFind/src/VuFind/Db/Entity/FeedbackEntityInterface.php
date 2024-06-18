@@ -43,14 +43,14 @@ use DateTime;
 interface FeedbackEntityInterface extends EntityInterface
 {
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
     public function getId(): int;
 
     /**
-     * Message setter
+     * Message setter.
      *
      * @param string $message Message
      *
@@ -59,7 +59,7 @@ interface FeedbackEntityInterface extends EntityInterface
     public function setMessage(string $message): FeedbackEntityInterface;
 
     /**
-     * Message getter
+     * Message getter.
      *
      * @return string
      */
@@ -75,7 +75,7 @@ interface FeedbackEntityInterface extends EntityInterface
     public function setFormData(array $data): FeedbackEntityInterface;
 
     /**
-     * Form data getter
+     * Form data getter.
      *
      * @return array
      */
@@ -91,7 +91,7 @@ interface FeedbackEntityInterface extends EntityInterface
     public function setFormName(string $name): FeedbackEntityInterface;
 
     /**
-     * Form name getter
+     * Form name getter.
      *
      * @return string
      */
@@ -107,7 +107,7 @@ interface FeedbackEntityInterface extends EntityInterface
     public function setCreated(DateTime $dateTime): FeedbackEntityInterface;
 
     /**
-     * Created getter
+     * Created getter.
      *
      * @return DateTime
      */
@@ -123,7 +123,7 @@ interface FeedbackEntityInterface extends EntityInterface
     public function setUpdated(DateTime $dateTime): FeedbackEntityInterface;
 
     /**
-     * Updated getter
+     * Updated getter.
      *
      * @return DateTime
      */
@@ -139,7 +139,7 @@ interface FeedbackEntityInterface extends EntityInterface
     public function setStatus(string $status): FeedbackEntityInterface;
 
     /**
-     * Status getter
+     * Status getter.
      *
      * @return string
      */
@@ -155,7 +155,7 @@ interface FeedbackEntityInterface extends EntityInterface
     public function setSiteUrl(string $url): FeedbackEntityInterface;
 
     /**
-     * Site URL getter
+     * Site URL getter.
      *
      * @return string
      */
@@ -171,7 +171,7 @@ interface FeedbackEntityInterface extends EntityInterface
     public function setUser(?UserEntityInterface $user): FeedbackEntityInterface;
 
     /**
-     * User getter
+     * User getter.
      *
      * @return ?UserEntityInterface
      */
@@ -187,7 +187,7 @@ interface FeedbackEntityInterface extends EntityInterface
     public function setUpdatedBy(?UserEntityInterface $user): FeedbackEntityInterface;
 
     /**
-     * Updatedby getter
+     * Updatedby getter.
      *
      * @return ?UserEntityInterface
      */

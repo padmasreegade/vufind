@@ -67,7 +67,7 @@ class UserList extends RowGateway implements
     use DbServiceAwareTrait;
 
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter     Database adapter
      * @param TagsService                 $tagsService Tags service
@@ -344,7 +344,7 @@ class UserList extends RowGateway implements
     /**
      * Set user.
      *
-     * @param ?UserEntityInterface $user User owning the list.
+     * @param ?UserEntityInterface $user User owning the list
      *
      * @return UserListEntityInterface
      */

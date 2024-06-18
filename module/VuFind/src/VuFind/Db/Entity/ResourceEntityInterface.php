@@ -41,14 +41,14 @@ namespace VuFind\Db\Entity;
 interface ResourceEntityInterface extends EntityInterface
 {
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
     public function getId(): int;
 
     /**
-     * Record Id setter
+     * Record Id setter.
      *
      * @param string $recordId recordId
      *
@@ -57,73 +57,73 @@ interface ResourceEntityInterface extends EntityInterface
     public function setRecordId(string $recordId): ResourceEntityInterface;
 
     /**
-     * Record Id getter
+     * Record Id getter.
      *
      * @return string
      */
     public function getRecordId(): string;
 
     /**
-     * Title setter
+     * Title setter.
      *
-     * @param string $title Title of the record.
+     * @param string $title Title of the record
      *
      * @return ResourceEntityInterface
      */
     public function setTitle(string $title): ResourceEntityInterface;
 
     /**
-     * Title getter
+     * Title getter.
      *
      * @return string
      */
     public function getTitle(): string;
 
     /**
-     * Author setter
+     * Author setter.
      *
-     * @param ?string $author Author of the title.
+     * @param ?string $author Author of the title
      *
      * @return ResourceEntityInterface
      */
     public function setAuthor(?string $author): ResourceEntityInterface;
 
     /**
-     * Year setter
+     * Year setter.
      *
-     * @param ?int $year Year title is published.
+     * @param ?int $year Year title is published
      *
      * @return ResourceEntityInterface
      */
     public function setYear(?int $year): ResourceEntityInterface;
 
     /**
-     * Source setter
+     * Source setter.
      *
-     * @param string $source Source (a search backend ID).
+     * @param string $source Source (a search backend ID)
      *
      * @return ResourceEntityInterface
      */
     public function setSource(string $source): ResourceEntityInterface;
 
     /**
-     * Source getter
+     * Source getter.
      *
      * @return string
      */
     public function getSource(): string;
 
     /**
-     * Extra Metadata setter
+     * Extra Metadata setter.
      *
-     * @param ?string $extraMetadata ExtraMetadata.
+     * @param ?string $extraMetadata ExtraMetadata
      *
      * @return ResourceEntityInterface
      */
     public function setExtraMetadata(?string $extraMetadata): ResourceEntityInterface;
 
     /**
-     * Extra Metadata getter
+     * Extra Metadata getter.
      *
      * @return ?string
      */

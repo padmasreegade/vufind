@@ -59,7 +59,7 @@ class AuthHash extends RowGateway implements AuthHashEntityInterface, DbServiceA
     use DbServiceAwareTrait;
 
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter Database adapter
      */

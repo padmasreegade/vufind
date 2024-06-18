@@ -43,14 +43,14 @@ use DateTime;
 interface CommentsEntityInterface extends EntityInterface
 {
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
     public function getId(): int;
 
     /**
-     * Comment setter
+     * Comment setter.
      *
      * @param string $comment Comment
      *
@@ -59,7 +59,7 @@ interface CommentsEntityInterface extends EntityInterface
     public function setComment(string $comment): CommentsEntityInterface;
 
     /**
-     * Comment getter
+     * Comment getter.
      *
      * @return string
      */
@@ -75,7 +75,7 @@ interface CommentsEntityInterface extends EntityInterface
     public function setCreated(DateTime $dateTime): CommentsEntityInterface;
 
     /**
-     * Created getter
+     * Created getter.
      *
      * @return DateTime
      */
@@ -91,7 +91,7 @@ interface CommentsEntityInterface extends EntityInterface
     public function setUser(?UserEntityInterface $user): CommentsEntityInterface;
 
     /**
-     * User getter
+     * User getter.
      *
      * @return ?UserEntityInterface
      */

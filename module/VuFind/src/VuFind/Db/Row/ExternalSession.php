@@ -52,7 +52,7 @@ use VuFind\Db\Entity\ExternalSessionEntityInterface;
 class ExternalSession extends RowGateway implements \VuFind\Db\Entity\ExternalSessionEntityInterface
 {
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter Database adapter
      */

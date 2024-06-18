@@ -51,7 +51,7 @@ class Tags extends RowGateway implements \VuFind\Db\Table\DbTableAwareInterface,
     use \VuFind\Db\Table\DbTableAwareTrait;
 
     /**
-     * Constructor
+     * Constructor.
      *
      * @param \Laminas\Db\Adapter\Adapter $adapter Database adapter
      */
@@ -115,7 +115,7 @@ class Tags extends RowGateway implements \VuFind\Db\Table\DbTableAwareInterface,
     }
 
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
@@ -125,7 +125,7 @@ class Tags extends RowGateway implements \VuFind\Db\Table\DbTableAwareInterface,
     }
 
     /**
-     * Tag setter
+     * Tag setter.
      *
      * @param string $tag Tag
      *
@@ -138,7 +138,7 @@ class Tags extends RowGateway implements \VuFind\Db\Table\DbTableAwareInterface,
     }
 
     /**
-     * Tag getter
+     * Tag getter.
      *
      * @return string
      */

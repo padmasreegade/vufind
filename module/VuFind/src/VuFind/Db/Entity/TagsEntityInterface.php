@@ -41,14 +41,14 @@ namespace VuFind\Db\Entity;
 interface TagsEntityInterface extends EntityInterface
 {
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
     public function getId(): int;
 
     /**
-     * Tag setter
+     * Tag setter.
      *
      * @param string $tag Tag
      *
@@ -57,7 +57,7 @@ interface TagsEntityInterface extends EntityInterface
     public function setTag(string $tag): TagsEntityInterface;
 
     /**
-     * Tag getter
+     * Tag getter.
      *
      * @return string
      */

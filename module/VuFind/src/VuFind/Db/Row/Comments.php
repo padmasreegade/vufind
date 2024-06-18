@@ -66,7 +66,7 @@ class Comments extends RowGateway implements CommentsEntityInterface, DbServiceA
     }
 
     /**
-     * Id getter
+     * Id getter.
      *
      * @return int
      */
@@ -76,7 +76,7 @@ class Comments extends RowGateway implements CommentsEntityInterface, DbServiceA
     }
 
     /**
-     * Comment setter
+     * Comment setter.
      *
      * @param string $comment Comment
      *
@@ -89,7 +89,7 @@ class Comments extends RowGateway implements CommentsEntityInterface, DbServiceA
     }
 
     /**
-     * Comment getter
+     * Comment getter.
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class Comments extends RowGateway implements CommentsEntityInterface, DbServiceA
     }
 
     /**
-     * Created getter
+     * Created getter.
      *
      * @return DateTime
      */
@@ -135,7 +135,7 @@ class Comments extends RowGateway implements CommentsEntityInterface, DbServiceA
     }
 
     /**
-     * User getter
+     * User getter.
      *
      * @return ?UserEntityInterface
      */
@@ -149,7 +149,7 @@ class Comments extends RowGateway implements CommentsEntityInterface, DbServiceA
     /**
      * Resource setter.
      *
-     * @param ResourceEntityInterface $resource Resource id.
+     * @param ResourceEntityInterface $resource Resource id
      *
      * @return Comments
      */
