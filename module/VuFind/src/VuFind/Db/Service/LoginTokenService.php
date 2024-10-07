@@ -50,7 +50,6 @@ class LoginTokenService extends AbstractDbService implements
     LoginTokenServiceInterface,
     Feature\DeleteExpiredInterface
 {
-
     /**
      * Create a new login token entity.
      *
@@ -127,7 +126,7 @@ class LoginTokenService extends AbstractDbService implements
     /**
      * Delete a token with givn id.
      *
-     * @param int $id   id
+     * @param int $id id
      *
      * @return void
      */
@@ -152,9 +151,9 @@ class LoginTokenService extends AbstractDbService implements
     {
         $dql = 'DELETE FROM ' . $this->getEntityClass(LoginToken::class) . ' lt '
             . 'WHERE lt.series = :series'
-            . 'AND lt.id != :id';
+            . 'AND lt.id != :currentTokenId';
         $query = $this->entityManager->createQuery($dql);
-        $query->setParameters(compact('series','id'));
+        $query->setParameters(compact('series', 'currentTokenId'));
         $query->execute();
     }
 
@@ -190,8 +189,8 @@ class LoginTokenService extends AbstractDbService implements
             . 'FROM ' . $this->getEntityClass(LoginTokenEntityInterface::class) . ' lt '
             . 'WHERE lt.userId = :userId '
             . 'ORDER BY lt.lastLogin DESC';
-    
-        if($grouped) {
+
+        if ($grouped) {
             // Modify the DQL for grouping logic
             $dql = 'SELECT MAX(lt.lastLogin) as lastLogin, lt.series, lt.browser, lt.platform, lt.expires '
                 . 'FROM ' . $this->getEntityClass(LoginTokenEntityInterface::class) . ' lt '
