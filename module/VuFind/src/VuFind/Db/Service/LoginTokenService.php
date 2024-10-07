@@ -108,10 +108,10 @@ class LoginTokenService extends AbstractDbService implements
     {
         $userId = null;
         foreach ($this->getBySeries($token['series']) as $row) {
-            $userId = $row->user_id;
-            if (hash_equals($row['token'], hash('sha256', $token['token']))) {
-                if (time() > $row['expires']) {
-                    $this->deleteById($row['id']);
+            $userId = $row->getUser()->getId();
+            if (hash_equals($row->getToken(), hash('sha256', $token['token']))) {
+                if (time() > $row->getExpires()) {
+                    $this->deleteById($row->getId());
                     return null;
                 }
                 return $row;
@@ -124,7 +124,7 @@ class LoginTokenService extends AbstractDbService implements
     }
 
     /**
-     * Delete a token with givn id.
+     * Delete a token with given id.
      *
      * @param int $id id
      *
@@ -133,7 +133,7 @@ class LoginTokenService extends AbstractDbService implements
     protected function deleteById(int $id): void
     {
         $dql = 'DELETE FROM ' . $this->getEntityClass(LoginToken::class) . ' lt '
-            . 'WHERE lt.id != :id';
+            . 'WHERE lt.id == :id';
         $query = $this->entityManager->createQuery($dql);
         $query->setParameter('id', $id);
         $query->execute();
@@ -235,7 +235,7 @@ class LoginTokenService extends AbstractDbService implements
     {
         $subQueryBuilder = $this->entityManager->createQueryBuilder();
         $subQueryBuilder->select('lt.id')
-            ->from($this->getEntityClass(LoginTokenEntityInterface::class), 'ah')
+            ->from($this->getEntityClass(LoginTokenEntityInterface::class), 'lt')
             ->where('lt.lastLogin < :dateLimit')
             ->setParameter('dateLimit', $dateLimit->format('Y-m-d H:i:s'));
         if ($limit) {
@@ -243,7 +243,7 @@ class LoginTokenService extends AbstractDbService implements
         }
         $queryBuilder = $this->entityManager->createQueryBuilder();
         $queryBuilder->delete($this->getEntityClass(LoginTokenEntityInterface::class), 'lt')
-            ->where('ah.lt IN (:tokens)')
+            ->where('lt.id IN (:tokens)')
             ->setParameter('tokens', value: $subQueryBuilder->getQuery()->getResult());
         return $queryBuilder->getQuery()->execute();
     }
