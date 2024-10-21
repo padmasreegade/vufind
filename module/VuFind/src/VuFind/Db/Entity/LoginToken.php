@@ -56,7 +56,7 @@ class LoginToken implements LoginTokenEntityInterface
      *          nullable=false
      * )
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="NONE")
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     protected $id;
 
@@ -133,6 +133,7 @@ class LoginToken implements LoginTokenEntityInterface
      *             type="string",
      *             length=255,
      *             nullable=true
+     * )
      */
     protected $platform;
 
@@ -157,6 +158,7 @@ class LoginToken implements LoginTokenEntityInterface
      *             type="string",
      *             length=255,
      *             nullable=true
+     * )
      */
     protected $lastSessionId;
 
